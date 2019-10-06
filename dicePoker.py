@@ -45,7 +45,7 @@ class PokerApp:
     while self.money >= 10 and self.interface.Play():
       self.playRound()
       self.interface.close()
-# Enable the player to play more than one round
+# Enabling the player to play more than one round
   def playRound(self):
     self.money = self.money - 10
     self.interface.setMoney(self.money)
